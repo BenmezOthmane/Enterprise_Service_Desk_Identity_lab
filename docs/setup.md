@@ -61,3 +61,11 @@ Priorities are calculated automatically based on **Impact** $\times$ **Urgency**
 | **P2 - High** | Departmental workflow blocked / Major feature down | 30 minutes | 4 hours |
 | **P3 - Medium** | Single user work impaired with workarounds | 2 hours | 8 hours |
 | **P4 - Low** | Minor issue / Non-urgent request | 4 hours | 24 hours |
+
+## IT Asset Management (ITAM) Setup
+
+### Asset Catalog & Architecture
+GLPI serves as the Central Asset Repository to maintain hardware inventory across the organization:
+* **Asset Types:** Workstations (`WIN-USER-01`), Printers, Monitors, and Mobile Devices.
+* **Lifecycle States:** `Available`, `In Use`, `Under Repair`, `Retired`.
+* **Asset Mapping:** Devices linked strictly to domain users (`hr.sara`), groups (`GG-HR-Users`), and physical locations (`Main Office`).
