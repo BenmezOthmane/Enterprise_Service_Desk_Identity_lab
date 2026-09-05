@@ -65,3 +65,30 @@ Priority is calculated automatically within GLPI by matching **Impact** against 
 3. **Documenting Solution:** The technician navigates to the **Solution** tab in GLPI, inputs a concise explanation of the technical action taken, and saves the entry.
 4. **Closing the Ticket:** GLPI sets the ticket status to **Solved**. Once the end-user verifies that service is restored, the status updates to **Closed**.
 ![GLPI Ticket Lifecycle Resolution](../evidence/screenshots/12-glpi-ticket-lifecycle.png)
+
+## IT Asset Management (ITAM) Operations
+
+### 1. Asset Lifecycle Management
+Assets transition through ITIL operational states:
+`Available` ➔ `Assigned (In Use)` ➔ `Under Repair` ➔ `Retired
+
+```mermaid
+graph TD
+    A[Stock / Storage] -->|Assigned to User| B[Active / In Use]
+    B -->|Hardware Issue| C[Under Repair]
+    C -->|Repaired| A
+    C -->|Unrepairable / EOL| D[Retired]
+```
+### 2. Hardware Provisioning Workflow (New Hire Onboarding)
+1. Locate workstation in GLPI inventory with status `Available`.
+2. Update record status to `In Use`, assign user (`hr.sara`), group (`GG-HR-Users`), and physical location (`Main Office`).
+
+![GLPI Asset Inventory](../evidence/screenshots/13-glpi-asset-inventory.png)
+![Asset Assigned to User](../evidence/screenshots/14-asset-assigned-to-user.png)
+
+### 3. Incident Mapping (Linking Tickets to Assets)
+1. Open active ticket in GLPI Service Desk.
+2. Under **Items / Elements**, add asset type `Computer` and select `WIN-USER-01`.
+3. Ensures complete audit trail between hardware reliability and user tickets.
+
+![Ticket Linked to Asset](../evidence/screenshots/15-ticket-linked-to-asset.png)
