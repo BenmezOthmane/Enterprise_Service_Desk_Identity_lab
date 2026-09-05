@@ -1,3 +1,18 @@
+# Infrastructure & ITSM Setup Documentation
+
+## Architecture & Environment Setup (Phase 1)
+The IT infrastructure is deployed on VMware Workstation, simulating an enterprise environment named `genitech.lab`.
+
+* **Domain Controller (`DC01`):** Windows Server 2022 hosting AD DS, DNS, and DHCP (`192.168.10.10`).
+* **Client Workstation (`WIN-USER-01`):** Windows 10/11 domain-joined endpoint.
+* **Service Desk Platform:** GLPI containerized via Docker on Ubuntu Server (`192.168.10.20`).
+
+![Architecture Diagram](../screenshots/01-architecture-diagram.png)
+![VMware Topology](../evidence/screenshots/01-vmware-lab-overview.png)
+![GLPI Docker Setup](../evidence/screenshots/04-glpi-homepage.png)
+
+---
+
 ## Active Directory & Group Policy Setup 
 
 * **Domain Controller:** `DC01.genitech.lab` (Windows Server 2022)
