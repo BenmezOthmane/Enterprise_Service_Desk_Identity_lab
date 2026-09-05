@@ -7,7 +7,7 @@ The IT infrastructure is deployed on VMware Workstation, simulating an enterpris
 * **Client Workstation (`WIN-USER-01`):** Windows 10/11 domain-joined endpoint.
 * **Service Desk Platform:** GLPI containerized via Docker on Ubuntu Server (`192.168.10.20`).
 
-![Architecture Diagram](../screenshots/01-architecture-diagram.png)
+![Architecture Diagram](../Architecture-Diagram.png)
 ![VMware Topology](../evidence/screenshots/01-vmware-lab-overview.png)
 ![GLPI Docker Setup](../evidence/screenshots/04-glpi-homepage.png)
 
