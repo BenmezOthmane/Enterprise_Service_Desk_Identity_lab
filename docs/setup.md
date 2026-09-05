@@ -19,7 +19,7 @@
 
 ## GLPI ITSM & Active Directory Integration Setup
 
-### Why GLPI
+### Why GLPI?
 GLPI was selected as the IT Service Management (ITSM) solution because it is an open-source, robust, ITIL v4-compliant platform that seamlessly integrates IT Asset Management (ITAM) with Helpdesk Service Requests, Incident Management, and native LDAP/Active Directory authentication.
 
 ### LDAP / Active Directory Integration
