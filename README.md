@@ -33,3 +33,23 @@ The project covers:
 8. Handling onboarding and offboarding workflows.
 9. Documenting incidents and solutions.
 10. Producing professional IT Support documentation and reports.
+
+---
+
+#  Lab Architecture
+
+```text
+                         VMware Lab
+                     192.168.50.0/24
+                              |
+             +----------------+----------------+
+             |                |                |
+             |                |                |
+          DC01            GLPI01         Windows Clients
+      Windows Server       Ubuntu          Windows 11
+       AD DS + DNS         GLPI          WIN-USER-01
+      192.168.50.5       192.168.50.10   WIN-USER-02
+             |                                 |
+             +---------------------------------+
+                    Domain: genitech.lab
+```
