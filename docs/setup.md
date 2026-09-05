@@ -4,8 +4,8 @@
 * **Domain Name:** `genitech.lab`
 ...
 
-![Active Directory Domain Setup](../screenshots/02-ad-domain-configured.png)
-![Group Policy Configuration](../screenshots/07-gpo-applied-on-client.png)
+![Active Directory Domain Setup](../evidence/screenshots/02-ad-domain-configured.png)
+![Group Policy Configuration](../evidence/07-gpo-applied-on-client.png)
 
 ---
 * **Organizational Unit (OU) Structure:**
@@ -36,7 +36,7 @@ GLPI was selected as the IT Service Management (ITSM) solution because it is an 
 * **User Filter:** `(&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))`
 * **Field Mapping:** Synchronized `samaccountname` to GLPI Login, `mail` to Email, and `givenname`/`sn` to User Profile.
 
-![GLPI LDAP Authentication](../screenshots/10-glpi-ldap-authentication.png)
+![GLPI LDAP Authentication](../evidence/screenshots/10-glpi-ldap-authentication.png)
 
 
 ### Ticket Categories
@@ -47,13 +47,13 @@ Standardized ITIL categories configured to route incidents effectively:
 * **Network:** Connectivity, Wi-Fi, VPN, and DNS/IP conflicts.
 * **Service Request:** General requests for hardware/software provisioning.
 
-![GLPI Ticket Categories](../screenshots/08-glpi-ticket-categories.png)
+![GLPI Ticket Categories](../evidence/screenshots/08-glpi-ticket-categories.png)
 
 
 ### Priority & SLA Policy Matrix
 Priorities are calculated automatically based on **Impact** $\times$ **Urgency**:
 
-![GLPI SLA Configuration](../screenshots/09-glpi-sla-configuration.png)
+![GLPI SLA Configuration](../evidence/screenshots/09-glpi-sla-configuration.png)
 
 | Priority Level | Description | Target Response (TTO) | Target Resolution (TTR) |
 | :--- | :--- | :--- | :--- |
