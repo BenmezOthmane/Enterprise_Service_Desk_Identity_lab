@@ -56,6 +56,6 @@ The project covers:
 
 | System      | Role                     | IP Address      |
 | ----------- | ------------------------ | --------------- |
-| DC01(Windows Server 2022)        | Active Directory + DNS   | `192.168.50.5`  |
+| DC01 (Windows Server 2022)        | Active Directory + DNS   | `192.168.50.5`  |
 | ITSM-GLPI-01      | GLPI ITSM / Service Desk | `192.168.50.10` |
-| WIN-USER-01 | Windows 11 Domain Client | `192.168.50.21` |
+| WIN-USER-01 | Windows 10 Pro Domain Client | `192.168.50.21` |
