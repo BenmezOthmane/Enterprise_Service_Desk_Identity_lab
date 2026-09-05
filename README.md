@@ -53,3 +53,9 @@ The project covers:
              +---------------------------------+
                     Domain: genitech.lab
 ```
+
+| System      | Role                     | IP Address      |
+| ----------- | ------------------------ | --------------- |
+| DC01        | Active Directory + DNS   | `192.168.50.5`  |
+| GLPI01      | GLPI ITSM / Service Desk | `192.168.50.10` |
+| WIN-USER-01 | Windows 11 Domain Client | `192.168.50.21` |
