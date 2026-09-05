@@ -4,6 +4,8 @@
 
 ##  Project Overview
 
+![Architecture_Diagram](Architecture-Diagram.png)
+
 This project simulates a small enterprise IT environment designed to demonstrate practical skills required in:
 
 - IT Support / Help Desk
