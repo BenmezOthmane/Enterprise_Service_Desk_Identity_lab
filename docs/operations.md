@@ -34,12 +34,15 @@
 
 ### 1. How an Incident is Created
 1. Domain users access the GLPI Self-Service Portal (`http://<GLPI_IP>`) using their Active Directory domain credentials (`genitech.lab`).
-2. Click **Create a ticket** from the main dashboard.
-3. Fill in the required fields:
+2. Verify access to portal.
+![GLPI Domain User Login](../evidence/screenshots/11-glpi-domain-user-login.png)
+
+3. Click **Create a ticket** from the main dashboard.
+4. Fill in the required fields:
    * **Category:** Select the relevant IT service category (e.g., `Access & Identity`).
    * **Urgency:** Define how urgently a resolution is needed.
    * **Title & Description:** Describe the issue clearly in first-person context (e.g., *I am unable to access the HR shared folder...*).
-4. Click **Submit ticket** to generate a unique Ticket ID (e.g., `INC-003`).
+5. Click **Submit ticket** to generate a unique Ticket ID (e.g., `INC-003`).
 
 ### 2. How Priority is Determined
 Priority is calculated automatically within GLPI by matching **Impact** against **Urgency** using the ITIL Matrix:
@@ -61,3 +64,4 @@ Priority is calculated automatically within GLPI by matching **Impact** against 
 2. **Technical Verification:** L2 verifies access propagation on the shared folder (`\\DC01\HR_Data`) to confirm the issue is fixed.
 3. **Documenting Solution:** The technician navigates to the **Solution** tab in GLPI, inputs a concise explanation of the technical action taken, and saves the entry.
 4. **Closing the Ticket:** GLPI sets the ticket status to **Solved**. Once the end-user verifies that service is restored, the status updates to **Closed**.
+![GLPI Ticket Lifecycle Resolution](../evidence/screenshots/12-glpi-ticket-lifecycle.png)
