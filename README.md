@@ -61,3 +61,11 @@ The project covers:
 | DC01 (Windows Server 2022)        | Active Directory + DNS   | `192.168.50.5`  |
 | ITSM-GLPI-01      | GLPI ITSM / Service Desk | `192.168.50.10` |
 | WIN-USER-01 | Windows 10 Pro Domain Client | `192.168.50.21` |
+
+## 👤 Author & Maintainer
+
+**Othmane Benmezian**
+* **Role:** Systems Administrator & IT Support
+* * **GitHub:** [@BenmezOthmane](https://github.com/BenmezOthmane)
+* **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/othmane-benmezian-685a1b353)
+* **Project Status:** --
