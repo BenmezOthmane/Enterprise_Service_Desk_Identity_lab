@@ -2,6 +2,12 @@
 
 * **Domain Controller:** `DC01.genitech.lab` (Windows Server 2022)
 * **Domain Name:** `genitech.lab`
+...
+
+![Active Directory Domain Setup](evidence/screenshots/02-ad-domain-configured.png)
+![Group Policy Configuration](evidence/screenshots/07-gpo-applied-on-client.png)
+
+---
 * **Organizational Unit (OU) Structure:**
   * `Genitech` (Root OU)
     * `Users` -> Sub-OUs: `HR`, `IT`, `Finance`, `Sales`
