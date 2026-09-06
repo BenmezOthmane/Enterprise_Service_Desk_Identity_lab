@@ -65,7 +65,7 @@ The project covers:
 ## 👤 Author & Maintainer
 
 **Othmane Benmezian**
-* **Role:** Systems Administrator & IT Support
+* **Role:** Systems Administrator(sysadmin) & IT Support
 * **GitHub:** [@BenmezOthmane](https://github.com/BenmezOthmane)
 * **LinkedIn:** [@LinkedIn](https://linkedin.com/in/othmane-benmezian-685a1b353)
 * **Project Status:** --
