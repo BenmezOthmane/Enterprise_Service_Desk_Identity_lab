@@ -37,5 +37,9 @@ function Invoke-PhishingMitigation {
     Get-MpComputerStatus | Select-Object AntivirusEnabled, RealTimeProtectionEnabled
 }
 
-
+# --- INC-010: Reset DNS & Flush Resolver Cache ---
+function Reset-NetworkDNS {
+    Get-NetAdapter | Set-DnsClientServerAddress -ResetServerAddresses
+    ipconfig /flushdns
+}
 
