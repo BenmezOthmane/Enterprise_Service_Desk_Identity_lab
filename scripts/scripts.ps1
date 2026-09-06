@@ -13,4 +13,10 @@ function Unlock-ADUserAccount {
     Get-ADUser -Identity $Username -Properties LockedOut | Select-Object Name, LockedOut
 }
 
+# --- INC-004: Enforce Group Policy Update ---
+function Sync-GroupPolicy {
+    gpupdate /force
+}
+
+
 
