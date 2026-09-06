@@ -18,5 +18,11 @@ function Sync-GroupPolicy {
     gpupdate /force
 }
 
+# --- INC-005: Restart Print Spooler Service ---
+function Restart-PrintSpooler {
+    Restart-Service -Name "Spooler" -Force
+    Get-Service -Name "Spooler" | Select-Object Name, Status
+}
+
 
 
