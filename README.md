@@ -6,6 +6,9 @@
 
 ![Architecture_Diagram](Architecture-Diagram.png)
 
+### 📊 ITSM Dashboard & Ticket Resolution Proof
+![GLPI Solved Tickets](evidence/GLPI-All-Tickets-Solved.png)
+
 This project simulates a small enterprise IT environment designed to demonstrate practical skills required in:
 
 - IT Support / Help Desk
