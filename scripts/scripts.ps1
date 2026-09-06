@@ -24,5 +24,11 @@ function Restart-PrintSpooler {
     Get-Service -Name "Spooler" | Select-Object Name, Status
 }
 
+# --- INC-006: Disk Cleanup & Temp Purge ---
+function Clear-SystemTemp {
+    Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+}
+
 
 
