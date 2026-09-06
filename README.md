@@ -7,7 +7,7 @@
 ![Architecture_Diagram](Architecture-Diagram.png)
 
 ### 📊 ITSM Dashboard & Ticket Resolution Proof
-![GLPI_Solved_Tickets](../evidence/screenshots/GLPI-All-Tickets-Solved.png)
+![GLPI_Solved_Tickets](../GLPI-All-Tickets-Solved.png)
 
 This project simulates a small enterprise IT environment designed to demonstrate practical skills required in:
 
