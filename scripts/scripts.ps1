@@ -30,5 +30,12 @@ function Clear-SystemTemp {
     Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
 }
 
+# --- INC-009: Security Domain Block & Defender Status ---
+function Invoke-PhishingMitigation {
+    param ([string]$MaliciousDomain = "phishing-attck-site.test")
+    Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "127.0.0.1 $MaliciousDomain"
+    Get-MpComputerStatus | Select-Object AntivirusEnabled, RealTimeProtectionEnabled
+}
+
 
 
