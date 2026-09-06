@@ -1,0 +1,49 @@
+# INC-004: Group Policy Update Failure due to Domain Name Resolution Loss
+
+## Executive Summary
+* **Incident ID:** INC-004
+* **Ticket Reference (GLPI):** #6
+* **Category:** System / Group Policy
+* **Requester:** `hr.sara`
+* **Target Workstation:** `WIN-USER-01`
+* **Severity / Priority:** High (P2)
+* **ITIL v4 Lifecycle Phase:** Incident Management — Restoration of Service
+
+---
+
+## 1. Incident Description & Detection
+User `hr.sara` reported that domain security policies and mapped network drives were failing to apply on workstation `WIN-USER-01`.
+
+* **Symptom:** Executing `gpupdate /force` returned an explicit processing failure error: *"Windows could not resolve the computer name / Name Resolution failure on the current domain controller."*
+* **Root Cause Analysis (RCA):** The client workstation lost connectivity to Active Directory DNS services, preventing Kerberos authentication and access to the domain `SYSVOL` share.
+
+---
+
+## 2. Technical Evidence
+
+### Problem Identification
+![GPO Update Failure](../screenshots/INC-004-problem-evidence.png)
+*Figure 1: Group Policy processing error due to Active Directory DNS resolution failure.*
+
+### Resolution Validation
+![Successful GPO Update](../screenshots/INC-004-resolution-validation.png)
+*Figure 2: Successful re-application of Computer and User policies following DNS restoration.*
+
+---
+
+## 3. Remediation & Workflow Executed
+
+1. **Ticket Logging (GLPI):** Created ticket under `System / Group Policy`, assigned to `it.adam`.
+2. **Network Diagnostics:**
+   * Executed `gpupdate /force` to isolate GPO engine status.
+   * Confirmed failure to resolve domain controller records via `nslookup genitech.lab`.
+3. **Remediation (`WIN-USER-01`):**
+   * Corrected network interface primary DNS setting back to `192.168.10.5` (`DC01`).
+   * Forced immediate policy re-sync via `gpupdate /force`.
+4. **Validation:** Confirmed both Computer Policy and User Policy updates completed successfully without warnings.
+5. **GLPI Closure:** Documented root cause and marked ticket as **Solved**.
+
+---
+
+## 4. Post-Incident Recommendations
+* Implement automated DNS configuration enforcement via DHCP to prevent local adapter tampering or misconfigurations.
